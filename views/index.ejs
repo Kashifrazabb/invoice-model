@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="hula-hoop.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto,wght@1,500&display=swap" rel="stylesheet">
+    <title>Invoice</title>
+</head>
+<body>
+    <div id='container'>
+        <h1 id="heading">INVOICE</h1>
+        <div id='main'>
+            <div id='invoice_wrapper'>
+                <div id='invoice_box'><%= invoice %></div>
+                <form action="/send" method="POST">
+                    <input id="get_button" type="submit" value="Get Invoice" id='invoice_button'>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">If you face any problem, please message here <a id="footer_link" href="https://t.me/aeiou_ee">https://t.me/aeiou_ee</a></div>
+</body>
+</html>

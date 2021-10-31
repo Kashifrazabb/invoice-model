@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        #container {
+            width:100%;
+            height:100vh;
+            background: lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <form action="/after-login" method="post" id="login-form" >
+            <input type="text" placeholder="Username" name='username' style="padding:12px">
+            <br><br>
+            <input type="text" placeholder="Password" name='password' style="padding:12px">
+            <br><br>
+            <input type="submit" value="Login" style="padding:12px">
+            
+        </form>
+    </div>
+</body>
+</html>
